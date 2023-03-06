@@ -1,0 +1,287 @@
+/* FONTES */
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+}
+
+/* RESET DO CSS E CONFIGS GERAIS DA PÁGINA */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.layout-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    height: 60px;
+    background-color: #f9003d;
+}
+
+header .header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+
+    height: 100%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 592px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 18px;
+    text-transform: uppercase;
+}
+
+header nav a:hover {
+    text-shadow: 2px 2px 20px white;
+}
+
+/* MAIN */
+/* Banner */
+
+main .Banner {
+    height: 740px;
+    background-image:url(../assets/images/imagem-fundo-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article h1 {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 96px;
+    width: 545px;
+    height: 230 px;
+
+    display: flex;
+    padding-top: 226px;
+}
+
+article hr {
+    border: 1px solid #FFAF00;
+    width: 545px;
+
+    display: flex;
+    padding-right: 120px;
+}
+
+article h2 {
+    color: #f9003d;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 53px;
+    font-weight: 700;
+
+    display: flex;
+    padding-top: 29px;
+}
+
+/* Section "Projetos" */
+
+main .Projetos {
+    height: 800px;
+    background-color: #080324;
+}
+
+/* CONFIGURAÇÕES DAS COLUNAS */
+main .column-flex  {
+    display: flex;
+    justify-content: space-between;
+}
+
+section .first-column {
+    width: 50%;
+}
+
+section .first-column h3 {
+    color: #f9003d;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+
+    display: flex;
+    padding-top: 64px;
+ 
+}
+
+section .first-column img {
+    width: 491px;
+    height: 476px;
+    
+    display: flex;
+    padding-top: 64px;
+}
+
+section .second-column {
+    width: 50%;
+}
+
+section .second-column #participantes {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+
+    display: flex;
+    padding-top: 205px;
+}
+
+section .second-column .h3-amarelo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: #FFAF00;
+
+    width: 557px;
+    height: 154px;
+
+    display: flex;
+    padding-top: 18px;
+}
+
+section .second-column p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+
+    width: 592px;
+    height: 252px;
+
+    display: flex;
+    padding-top: 18px;
+}
+
+/* Section "Info" */
+
+main .info {
+    height: 200px;
+    background-image: url(../assets/images/imagem-fundo-info.png);
+
+    display: flex;
+    align-items: center;
+}
+
+main .info-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main .info-column-flex {
+    display: flex;
+    flex-direction:column;
+}
+
+section .titulos-info {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;  
+    margin-bottom: 10px;
+}
+
+section .conteudo-info {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 289px;
+    height: 100px;
+    
+    border: 1px solid #A259F7;
+}
+
+section .p-info {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: 700;
+    color: #A259F7;  
+}
+
+/* Section "Endereço" */
+
+main .Endereço {
+    height: 518px;
+    background-image: url(../assets/images/imagem-fundo-endereco.png);
+}
+
+section .h3-endereco {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: #FFAF00;
+
+    display: flex;
+    padding-top: 81px;
+    padding-left: 264px;
+    padding-bottom: 36px;
+}
+
+section .caixa-de-endereco-flex {
+    display: flex;
+    margin-left: 264px;
+
+    position: relative;
+    
+    width: 899px;
+    height: 203px;
+    
+    border: 1px solid #A259F7;
+    background-color: #010010;
+}
+
+section #caixa-de-endereco p {
+    width: 435px;
+    height: 88px;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 400;
+    color: #A259F7;
+
+    display: flex;
+    padding-top: 57px;
+    padding-left: 55px;
+}
+j
+/* FOOTER */
+
+footer .footer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #f9003d;
+    padding: 41px;
+}
+
+footer p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}

@@ -12,22 +12,23 @@
 <body>
     <header>
         <div class="layout-grid header-flex">
-            <nav>
+            <nav id="navmenu">
                 <a href="">Início</a>
                 <a href="">Sobre</a>
                 <a href="">Desafios</a>
                 <a href="">Endereço</a>
             </nav>
+            <img src="./assets/images/menu_FILL0_wght400_GRAD0_opsz48.svg" id="menu-mobile" alt="Abre o menu mobile" onclick="mostrarMenu()">
         </div>
     </header>
 
     <main>
         <article class="Banner">
-            <div class="layout-grid">
+            <div class="layout-grid banner-flex">
                 <h1>Desenvolvimento de Sistemas 2021</h1>
                 <hr>
                 <h2>Senai Informática</h2>
-                <img src="/assets/images/mouse-down 1.svg" alt="ícone Mouse Down">
+                <img src="assets/images/mouse.svg" alt="ícone Mouse Down">
             </div>
         </article>
 
@@ -92,12 +93,17 @@
 
     </main>
 
-    <footer>
+    <footer> 
         <div class="layout-grid footer-flex">
             <p>Copyright © 2020 - Escola Senai de Informática</p>
         </div>
 
     </footer>
+    <script>
+        function mostrarMenu() {
+            document.getElementById("navmenu").classList.toggle("mostrarMenu");
+        }
+    </script>
 
 </body>
 

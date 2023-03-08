@@ -55,6 +55,10 @@ header nav a:hover {
     text-shadow: 2px 2px 20px white;
 }
 
+header img {
+    display:none;
+}
+
 /* MAIN */
 
 /* Banner */
@@ -64,6 +68,17 @@ main .Banner {
     background-image:url(../assets/images/imagem-fundo-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
+}
+
+main .banner-flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+main .banner-flex #banner-infobox {
+    width: 560px;
 }
 
 article h1 {
@@ -231,50 +246,46 @@ section .p-info {
 
 /* Section "Endereço" */
 
-main .Endereço {
-    height: 518px;
-    background-image: url(../assets/images/imagem-fundo-endereco.png);
+.endereco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 598px;
+    background-image: url(/assets/images/imagem-fundo-endereco.png);
 }
 
-section .h3-endereco {
+.titulo-endereco {
     font-family: "Bebas Neue", sans-serif;
     font-size: 64px;
     font-weight: 400;
+    letter-spacing: 3px;
     color: #FFAF00;
-
-    display: flex;
-    padding-top: 81px;
-    padding-left: 264px;
-    padding-bottom: 36px;
+    margin-bottom: 10px;
 }
 
-section .caixa-de-endereco-flex {
+.endereco-caixa {
     display: flex;
-    margin-left: 264px;
-
     position: relative;
-    
-    width: 899px;
-    height: 203px;
-    
-    border: 1px solid #A259F7;
+    width: 900px;
+    padding: 56px;
     background-color: #010010;
+    border: 2px solid #340B65;
 }
 
-section #caixa-de-endereco p {
-    width: 435px;
-    height: 88px;
-    
+.endereco-texto {
     font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
-    font-weight: 400;
     color: #A259F7;
-
-    display: flex;
-    padding-top: 57px;
-    padding-left: 55px;
+    width: 445px;
 }
-j
+
+.endereco img {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
 /* FOOTER */
 
 footer .footer-flex {
@@ -303,14 +314,18 @@ footer p {
         opacity: 1;
     }
    
-     temporariamente off
+    /* temporariamente off
     main,
     footer 
     {
         display: none;
-    }
+    } */
 
     header #menu-mobile {
+        display: block;
+    } 
+
+    header img {
         display: block;
     }
 
@@ -329,9 +344,22 @@ footer p {
     }
 
     main .banner-flex {
-        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 80px;
     }
-    article h1 {
+
+    main .banner-flex h1 {
         font-size: 40px;
+        text-align: justify;
+        max-width: 260px;
+    }
+
+    main .banner-flex #banner-infobox {
+        max-width: 355px;
+    }
+
+    main .banner-flex #banner-infobox img {
+        display: none;
     }
 }

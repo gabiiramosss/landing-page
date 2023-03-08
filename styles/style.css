@@ -252,7 +252,7 @@ section .p-info {
     justify-content: center;
     align-items: center;
     height: 598px;
-    background-image: url(/assets/images/imagem-fundo-endereco.png);
+    background-image: url(../assets/images/imagem-fundo-endereco.png);
 }
 
 .titulo-endereco {
